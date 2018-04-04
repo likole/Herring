@@ -1,0 +1,38 @@
+{
+	"index.html": {
+		"resources": [
+			"news.html"
+		],
+		"refer": [
+			"news.html",
+			"service.html",
+			"customer-service.html",
+			"my.html",
+			"entertainment.html"
+		]
+	},
+	"news.html": {
+		"resources": [
+			"news-index/listview.html"
+		],
+		"refer": [
+			"news-index/listview.html"
+		]
+	},
+	"news-index/listview.html": {
+		"refer": [
+			"news-index/detail.html"
+		]
+	},
+	"entertainment.html": {
+		"resources": [
+			"entertainment-pass.html",
+			"entertainment-recommend.html"
+		],
+		"refer": [
+			"entertainment-pass.html",
+			"entertainment-recommend.html",
+			"entertainment-community.html"
+		]
+	}
+}
