@@ -6,10 +6,76 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			body {
+				background-color: #FFFFFF;
+			}
+		</style>
 	</head>
 
 	<body>
-		这里是社区
+		<div class="mui-content">
+			<div class="mui-input-row mui-plus-visible">
+				<input type="text" class="mui-input-speech mui-input-clear" placeholder="往期話題搜索">
+			</div>
+
+			<div class="mui-card">
+				<div class="mui-card-header">
+					今日話題
+				</div>
+				<div class="mui-card-content">
+					<p>
+						如果XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+					</p>
+
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-card-link">Like</a>
+					<a class="mui-card-link">Comment</a>
+				</div>
+			</div>
+
+			<div class="mui-card">
+				<div class="mui-card-header">精选评论：</div>
+				<div class="mui-card-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<!--<img class="mui-media-object mui-pull-left" src="../images/shuijiao.jpg">-->
+								<div class="mui-media-body">
+									aaa:
+									<p class='mui-ellipsis'>评论1</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<!--<img class="mui-media-object mui-pull-left" src="../images/muwu.jpg">-->
+								<div class="mui-media-body">
+									bbb:
+									<p class='mui-ellipsis'>评论2</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="mui-card">
+				<div class="mui-card-header">
+					我要吐槽/發起話題
+				</div>
+				<div class="mui-card-content">
+					<form>
+						<div class="mui-input-row" style="margin: 10px 5px;">
+							<textarea id="textarea" rows="5" placeholder="XXXXXX"></textarea>
+						</div>
+						<button type="button" class="mui-btn mui-btn-primary mui-btn-block">發送</button>
+					</form>
+				</div>
+			</div>
+		</div>
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()

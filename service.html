@@ -6,52 +6,75 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
 	</head>
 
 	<body>
 		<ul class="mui-table-view mui-grid-view mui-grid-9">
-		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-		    <a href="#">
-		        <span class="mui-icon mui-icon-extra mui-icon-extra-university"></span>
-		        <div class="mui-media-body">学习信息</div>
-		    </a>
-		</li>
-		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-		    <a href="#">
-		        <span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge mui-badge-red">5</span></span>
-		        <div class="mui-media-body">二手信息</div>
-		    </a>
-		</li>
-		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-		    <a href="#">
-		        <span class="mui-icon mui-icon-extra mui-icon-extra-gold"></span>
-		        <div class="mui-media-body">赚钱信息</div>
-		    </a>
-		</li>
-		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-		    <a href="#">
-		        <span class="mui-icon mui-icon-extra mui-icon-extra-heart-filled"></span>
-		        <div class="mui-media-body">交友信息</div>
-		    </a>
-		</li>
-		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-		    <a href="#">
-		        <span class="mui-icon mui-icon-extra mui-icon-extra-calendar"></span>
-		        <div class="mui-media-body">生活信息</div>
-		    </a>
-		</li>
-		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-		    <a href="#">
-		        <span class="mui-icon mui-icon-extra mui-icon-extra-hotel"></span>
-		        <div class="mui-media-body">正在建设中</div>
-		    </a>
-		</li>
-		    </ul>
-		
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" href="service-learning.html">
+				<a href="#">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-university"></span>
+					<div class="mui-media-body">学习信息</div>
+				</a>
+			</li>
+			<li href="service-secondhand.html" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge mui-badge-red">5</span></span>
+					<div class="mui-media-body">二手信息</div>
+				</a>
+			</li>
+			<li href="service-money.html" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-gold"></span>
+					<div class="mui-media-body">赚钱信息</div>
+				</a>
+			</li>
+			<li href="service-friend.html" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-heart-filled"></span>
+					<div class="mui-media-body">交友信息</div>
+				</a>
+			</li>
+			<li href="service-life.html" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-calendar"></span>
+					<div class="mui-media-body">生活信息</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-hotel"></span>
+					<div class="mui-media-body">正在建设中</div>
+				</a>
+			</li>
+		</ul>
+
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init();
+			mui('.mui-table-view').on('tap', '.mui-table-view-cell', function(e) {
+						var targetTab = this.getAttribute('href');
+						mui.openWindow({
+							url: targetTab,
+							id: targetTab,
+//							styles: { // 窗口参数 参考5+规范中的WebviewStyle,也就是说WebviewStyle下的参数都可以在此设置
+//								titleNView: { // 窗口的标题栏控件
+//									titleText: "标题栏", // 标题栏文字,当不设置此属性时，默认加载当前页面的标题，并自动更新页面的标题
+//									titleColor: "#000000", // 字体颜色,颜色值格式为"#RRGGBB",默认值为"#000000"
+//									titleSize: "17px", // 字体大小,默认17px
+//									backgroundColor: "#F7F7F7", // 控件背景颜色,颜色值格式为"#RRGGBB",默认值为"#F7F7F7"
+//									progress: { // 标题栏控件的进度条样式
+//										color: "#00FF00", // 进度条颜色,默认值为"#00FF00"  
+//										height: "2px" // 进度条高度,默认值为"2px"         
+//									},
+//									splitLine: { // 标题栏控件的底部分割线，类似borderBottom
+//										color: "#CCCCCC", // 分割线颜色,默认值为"#CCCCCC"  
+//										height: "1px" // 分割线高度,默认值为"2px"
+//									}
+//								}
+//							}
+						});
+				});
 		</script>
 	</body>
 

@@ -144,7 +144,9 @@
 				"priority": 0
 			},
 			"news-index/listview.html": {
-				"resources": [],
+				"resources": [
+					"css/mui.min.css"
+				],
 				"refer": [
 					"news-index/detail.html"
 				],
@@ -159,6 +161,42 @@
 					"entertainment-community.html"
 				],
 				"priority": 0
+			},
+			"entertainment-pass.html": {
+				"resources": [],
+				"refer": [
+					"entertainment-pass.html"
+				],
+				"priority": 0
+			},
+			"service.html": {
+				"resources": [],
+				"refer": [
+					"service-learing.html",
+					"service-learning.html",
+					"service-secondhand.html",
+					"service-money.html",
+					"service-friend.html",
+					"service-life.html"
+				],
+				"priority": 0
+			},
+			"service-learning.html": {
+				"resources": [],
+				"refer": [
+					"service-learning-man.html",
+					"service-learning-ask.html",
+					"service-learning-class.html",
+					"service-learning-course.html"
+				],
+				"priority": 0
+			},
+			"my.html": {
+				"resources": [],
+				"refer": [
+					"my-favourite.html"
+				],
+				"priority": 0
 			}
 		},
 		"idle": {
@@ -166,7 +204,6 @@
 				"fonts/mui-icons-extra.ttf",
 				"js/mui.min.js",
 				"fonts/mui.ttf",
-				"css/mui.min.css",
 				"js/mui.js",
 				"css/mui.css",
 				"css/icons-extra.css"
