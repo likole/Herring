@@ -255,7 +255,7 @@
 									<div class="mui-media-body">點贊數</div>
 								</a>
 							</li>
-							<li id="favourite" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<li href="my-favourite.html" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
 								<a href="#">
 									<span class="mui-icon mui-icon-starhalf"></span>
 									<div  class="mui-media-body">收藏</div>
@@ -284,6 +284,9 @@
 							</li>
 						</ul>-->
 						<ul class="mui-table-view">
+							<li href="login.html" class="mui-table-view-cell" style="text-align: center;">
+								<a>登录樣例（測試）</a>
+							</li>
 							<li class="mui-table-view-cell" style="text-align: center;">
 								<a>退出登录</a>
 							</li>
@@ -817,10 +820,11 @@
 
 		});
 		
-		mui(".mui-table-view").on("tap","#favourite",function(e){
-			mui.openWindow({
-							url: "my-favourite.html",
-							id: "my-favourite.html"
+		mui(".mui-table-view").on("tap",".mui-table-view-cell",function(e){
+			var targetTab = this.getAttribute('href');
+						mui.openWindow({
+							url: targetTab,
+							id: targetTab,
 						});
 		});
 

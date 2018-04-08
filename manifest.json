@@ -194,7 +194,17 @@
 			"my.html": {
 				"resources": [],
 				"refer": [
-					"my-favourite.html"
+					"my-favourite.html",
+					"login.html"
+				],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [],
+				"refer": [
+					"main.html",
+					"reg.html",
+					"forget_password.html"
 				],
 				"priority": 0
 			}
