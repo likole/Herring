@@ -1,77 +1,77 @@
 {
-	"index.html": {
-		"resources": [
-			"news.html"
-		],
-		"refer": [
-			"news.html",
-			"service.html",
-			"customer-service.html",
-			"my.html",
-			"entertainment.html"
-		]
-	},
-	"news.html": {
-		"resources": [
-			"news-index/listview.html"
-		],
-		"refer": [
-			"news-index/listview.html"
-		]
-	},
-	"news-index/listview.html": {
-		"refer": [
-			"news-index/detail.html"
-		],
-		"resources": [
-			"css/mui.min.css"
-		]
-	},
-	"entertainment.html": {
-		"resources": [
-			"entertainment-pass.html",
-			"entertainment-recommend.html"
-		],
-		"refer": [
-			"entertainment-pass.html",
-			"entertainment-recommend.html",
-			"entertainment-community.html"
-		]
-	},
-	"entertainment-pass.html": {
-		"refer": [
-			"entertainment-pass.html"
-		]
-	},
-	"service.html": {
-		"refer": [
-			"service-learing.html",
-			"service-learning.html",
-			"service-secondhand.html",
-			"service-money.html",
-			"service-friend.html",
-			"service-life.html"
-		]
-	},
-	"service-learning.html": {
-		"refer": [
-			"service-learning-man.html",
-			"service-learning-ask.html",
-			"service-learning-class.html",
-			"service-learning-course.html"
-		]
-	},
-	"my.html": {
-		"refer": [
-			"my-favourite.html",
-			"login.html"
-		]
-	},
-	"login.html": {
-		"refer": [
-			"main.html",
-			"reg.html",
-			"forget_password.html"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "news.html"
+    ],
+    "refer": [
+      "news.html",
+      "service.html",
+      "customer-service.html",
+      "my.html",
+      "entertainment.html"
+    ]
+  },
+  "news.html": {
+    "resources": [
+      "news-index/listview.html"
+    ],
+    "refer": [
+      "news-index/listview.html"
+    ]
+  },
+  "news-index/listview.html": {
+    "refer": [
+      "news-index/detail.html"
+    ],
+    "resources": [
+      "css/mui.min.css"
+    ]
+  },
+  "entertainment.html": {
+    "resources": [
+      "entertainment-pass.html",
+      "entertainment-recommend.html"
+    ],
+    "refer": [
+      "entertainment-pass.html",
+      "entertainment-recommend.html",
+      "entertainment-community.html"
+    ]
+  },
+  "entertainment-pass.html": {
+    "refer": [
+      "entertainment-pass.html"
+    ]
+  },
+  "service.html": {
+    "refer": [
+      "service-learing.html",
+      "service-learning.html",
+      "service-secondhand.html",
+      "service-money.html",
+      "service-friend.html",
+      "service-life.html"
+    ]
+  },
+  "service-learning.html": {
+    "refer": [
+      "service-learning-man.html",
+      "service-learning-ask.html",
+      "service-learning-class.html",
+      "service-learning-course.html"
+    ]
+  },
+  "my.html": {
+    "refer": [
+      "my-favourite.html",
+      "login.html"
+    ]
+  },
+  "login.html": {
+    "refer": [
+      "main.html",
+      "reg.html",
+      "forget_password.html"
+    ]
+  }
 }
